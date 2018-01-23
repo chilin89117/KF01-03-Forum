@@ -20,7 +20,7 @@ return [
     'github' => [
       'client_id' => '5b9781622efbb54095e9',
       'client_secret' => '6350acc7206d482e46234b407947abf09ff20b43',
-      'redirect_uri' => 'http://03-forum.dev/github/redirect',
+      'redirect_uri' => 'http://kf01-03-forum.test/github/redirect',
       'scope' => [],
     ],
   ],

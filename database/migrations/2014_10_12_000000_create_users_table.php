@@ -13,7 +13,7 @@ class CreateUsersTable extends Migration
       $table->boolean('admin')->default(0);
       $table->string('email')->unique();
       $table->string('password');
-      $table->string('avatar');
+      $table->string('avatar')->default('http://kf01-03-forum.test/avatars/default_avatar.png');
       $table->rememberToken();
       $table->timestamps();
     });

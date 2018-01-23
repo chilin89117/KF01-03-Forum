@@ -106,7 +106,7 @@
         <div class="small-txt">Login with :
           <a href="{{route('login')}}" class="small-txt">Email</a>
           <a href="{{route('social.auth', ['provider'=>'github'])}}" class="small-txt">GitHub</a>
-          <a href="#" class="small-txt">Facebook</a>
+          <!-- <a href="#" class="small-txt">Facebook</a> -->
         </div>
         @endguest
       </div>
