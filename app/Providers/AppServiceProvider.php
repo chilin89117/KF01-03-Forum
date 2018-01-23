@@ -1,6 +1,5 @@
 <?php
 namespace App\Providers;
-
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use App\Channel;
@@ -12,7 +11,8 @@ class AppServiceProvider extends ServiceProvider
   {
     Schema::defaultStringLength(191);
 
-    View::share('channels', Channel::orderBy('title')->get())->except(['auth.login', 'auth.register']);
+    View::share('channels', Channel::orderBy('title')->get())
+      ->except(['auth.login', 'auth.register']);
   }
 
   public function register()

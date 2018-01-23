@@ -29,6 +29,4 @@ Route::group(['middleware'=>'auth'], function() {
 
   Route::post('discussions/{discussion}/watch', 'WatcherController@watch')->name('watch');
   Route::delete('discussions/{discussion}/unwatch', 'WatcherController@unwatch')->name('unwatch');
-
-
 });
