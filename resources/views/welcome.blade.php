@@ -77,7 +77,6 @@
           @endauth
         </div>
       @endif
-
       <div class="content">
         <div class="jumbotron">
           <div class="image">
@@ -86,7 +85,6 @@
           <div class="title m-b-md">Wars of the Roses</div>
           <div class="subtitle m-b-md">Discussion Forum</div>
         </div>
-
         @guest
         <div class="small-txt">Login with :
           <a href="{{route('login')}}" class="small-txt">Email</a>

@@ -19,7 +19,5 @@ class CreateDiscussionsTable extends Migration
   }
 
   public function down()
-  {
-    Schema::dropIfExists('discussions');
-  }
+  { Schema::dropIfExists('discussions'); }
 }

@@ -24,7 +24,6 @@
       </div>
     </div>
   </div>
-
   <div class="panel-body">
     <p>{!!Markdown::convertToHtml($discussion->content)!!}</p>
     <hr>
@@ -38,7 +37,6 @@
             <img src="{{$rep->user->avatar}}" width="24" height="36" alt="{{$rep->user->name}}">
           </div>
           <div class="col-md-11">by&nbsp;{{$rep->user->name}}&nbsp;{{$rep->created_at->diffForHumans()}}
-
             @if($discussion->user_id == auth()->id())
               @if($discussion->closed == 0)
               <span class="pull-right">
@@ -69,13 +67,10 @@
           </div>
         </div>
       </div>
-
       <div class="panel-body">{!!Markdown::convertToHtml($rep->content)!!}</div>
-
       <div class="panel-footer">
         <h5>Likes:
           <span class="badge">{{$rep->likes()->count()}}</span>
-
           @if($rep->likes->where('user_id', auth()->id())->count())
           <a href="{{route('replies.unliked', $rep)}}" class="btn btn-danger btn-xs pull-right">
             <i class="fa fa-thumbs-o-down"></i>&nbsp;&nbsp;Unlike
@@ -90,7 +85,6 @@
     </div>
     <br>
     @endforeach
-
     <div class="panel panel-default">
       <div class="panel-body">
         @if($discussion->closed == 0)

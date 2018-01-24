@@ -1,6 +1,5 @@
 <div class="panel panel-success">
   <div class="panel-heading">Actions</div>
-
   <div class="panel-body">
     <ul class="list-group">
       @if($channels->count() > 0)
@@ -25,8 +24,6 @@
     </ul>
   </div>
 </div>
-
-
 <div class="panel panel-danger">
   <div class="panel-heading">Channels
   </div>

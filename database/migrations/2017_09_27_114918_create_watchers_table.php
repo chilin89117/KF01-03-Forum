@@ -16,7 +16,5 @@ class CreateWatchersTable extends Migration
   }
 
   public function down()
-  {
-    Schema::dropIfExists('watchers');
-  }
+  { Schema::dropIfExists('watchers'); }
 }

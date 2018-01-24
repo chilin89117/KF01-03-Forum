@@ -1,37 +1,20 @@
 textarea
-{
-  resize: vertical;
-  overflow: auto;
-  border-width: 2px;
-}
+{ resize: vertical; overflow: auto; border-width: 2px; }
 
 a.dis-title
-{
-  color: #555;
-  text-decoration: none;
-}
+{ color: #555; text-decoration: none; }
 
-.list-group-item > a,
-small > a,
-h3 > a,
-h4 > a
-{
-  text-decoration: none;
-}
+.list-group-item > a, small > a, h3 > a, h4 > a
+{ text-decoration: none; }
 
 .fa-star
-{
-  color: red;
-}
+{ color: red; }
 
-.btn-edit {
-  margin-top: 20px;
-}
+.btn-edit 
+{ margin-top: 20px; }
 
-.panel {
-  box-shadow: 5px 5px 5px #ccc;
-}
+.panel 
+{ box-shadow: 5px 5px 5px #ccc; }
 
-.panel-heading {
-  font-weight: bolder;
-}
+.panel-heading 
+{ font-weight: bolder; }
