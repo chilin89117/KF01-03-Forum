@@ -34,12 +34,16 @@
   <div class="panel-body">
     <ul class="list-group">
       @foreach($channels as $c)
-      <li class="list-group-item">
-        <a href="{{url('/discussions/?channel='.$c->id)}}">
-          <i class="fa fa-bullhorn"></i>&nbsp;&nbsp;{{$c->title}}
-        </a>
-        <span class="badge">{{$c->discussions->count()}}</span>
-      </li>
+        @if($c->id == request()['channel'])
+        <li class="list-group-item" style="background-color:lightyellow;">
+        @else
+        <li class="list-group-item">
+        @endif
+          <a href="{{url('/discussions/?channel='.$c->id)}}">
+            <i class="fa fa-bullhorn"></i>&nbsp;&nbsp;{{$c->title}}
+          </a>
+          <span class="badge">{{$c->discussions->count()}}</span>
+        </li>
       @endforeach
     </ul>
   </div>

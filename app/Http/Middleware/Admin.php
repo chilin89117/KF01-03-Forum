@@ -1,6 +1,5 @@
 <?php
 namespace App\Http\Middleware;
-
 use Closure;
 
 class Admin
@@ -10,7 +9,6 @@ class Admin
     if(!auth()->user()->admin) {
       return redirect()->back();
     }
-
     return $next($request);
   }
 }

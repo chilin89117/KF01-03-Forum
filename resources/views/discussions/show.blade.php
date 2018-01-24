@@ -98,7 +98,7 @@
           {{csrf_field()}}
           {{method_field('put')}}
           <div class="form-group">
-            <textarea name="content" class="form-control" rows="4" placeholder="Your reply..."></textarea>
+            <textarea name="content" class="form-control" rows="4" placeholder="Your reply (markdowns ok)"></textarea>
           </div>
           <button type="submit" name="button" class="btn btn-success">Submit</button>
         </form>

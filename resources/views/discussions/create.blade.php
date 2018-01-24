@@ -24,7 +24,7 @@
 
       <div class="form-group">
         <label for="content">Content</label>
-        <textarea name="content" rows="7" class="form-control">{{old('content')}}</textarea>
+        <textarea name="content" rows="7" class="form-control" placeholder="(markdowns ok)">{{old('content')}}</textarea>
       </div>
 
       <button type="submit" name="button" class="btn btn-success">

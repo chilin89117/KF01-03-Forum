@@ -21,7 +21,7 @@ Route::group(['middleware'=>'auth'], function() {
     ->name('discussions.addreply');
 
   Route::resource('channels', 'ChannelController')->except(['show']);
-  Route::resource('discussions', 'DiscussionController');
+  Route::resource('discussions', 'DiscussionController')->except(['destroy']);
   Route::get('replies/{reply}/liked', 'ReplyController@liked')->name('replies.liked');
   Route::get('replies/{reply}/unliked', 'ReplyController@unliked')->name('replies.unliked');
   Route::put('replies/{reply}/fave', 'ReplyController@fave')->name('replies.fave');
