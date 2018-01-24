@@ -104,7 +104,7 @@
         </form>
         @else
         <h4>This is discussion is closed.
-          <small>(The user can reopen the discussion by unmarking his/her favorite reply.)</small>
+          <small>({{$discussion->user->name}} can reopen the discussion by unmarking his/her favorite reply.)</small>
         </h4>
         @endif
       </div>

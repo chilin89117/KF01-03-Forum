@@ -67,7 +67,8 @@ class DiscussionController extends Controller
 
   public function show(Discussion $discussion)
   {
-    $replies = $discussion->replies()->latest()->with('user')->get();
+    $replies = $discussion->replies()->orderBy('best', 'desc')
+      ->latest()->with('user')->get();
     return view('discussions.show', compact('discussion', 'replies'));
   }
 

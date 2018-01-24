@@ -1,6 +1,5 @@
 <?php
 namespace App\Http\Controllers;
-
 use App\Watcher;
 use App\Discussion;
 use App\User;
@@ -14,7 +13,6 @@ class WatcherController extends Controller
       'discussion_id' => $discussion->id,
       'user_id'       => auth()->id()
     ]);
-
     return redirect()->back()
                      ->with(['success'=>'You are watching a discussion.']);
   }
@@ -24,9 +22,7 @@ class WatcherController extends Controller
     Watcher::where('discussion_id', $discussion->id)
            ->where('user_id', auth()->id())
            ->delete();
-
     return redirect()->back()
                      ->with(['success'=>'You have unwatched a discussion.']);
   }
-
 }

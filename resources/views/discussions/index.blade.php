@@ -30,6 +30,11 @@
         <div class="panel-footer">
           <h5>Replies:
             <span class="badge">{{$dis->replies()->count()}}</span>
+            @if($dis->closed)
+            <span class="pull-right">
+              <i class="fa fa-exclamation fa-3x"></i>&nbsp;&nbsp;Closed
+            </span>
+            @else
             <span class="pull-right">
               @if($dis->watchers->where('user_id', auth()->id())->count())
               <form action="{{route('unwatch', $dis)}}" method="post">
@@ -48,6 +53,7 @@
               </form>
               @endif
             </span>
+            @endif
           </h5>
         </div>
       </div>

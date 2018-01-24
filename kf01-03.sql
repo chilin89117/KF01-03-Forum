@@ -365,7 +365,7 @@ INSERT INTO `users` (`id`, `name`, `admin`, `email`, `password`, `avatar`, `reme
 (48, 'Harvey Gutmann', 0, 'edwin57@example.org', '$2y$10$Ft.vQr6367qWe/H4IIWafefgNQdFnreRrO2UiHncpdf.9Y8FVqJEK', 'http://kf01-03-forum.test/avatars/m9.png', NULL, '2017-09-27 02:33:17', '2017-09-27 02:33:17'),
 (49, 'Mr. Alvis Mills', 0, 'moen.greg@example.com', '$2y$10$GwyYbGfVaArU0qQS82OdT.wTWQoaTXIYvy9IcRl9D8ge/pLblmGa6', 'http://kf01-03-forum.test/avatars/m10.png', NULL, '2017-09-27 02:33:17', '2017-09-27 02:33:17'),
 (50, 'John D\'Amore', 0, 'colton76@example.org', '$2y$10$FV467ZQZOzkixxptKaohVOJr/5/nhm3GLso9CxmZmPLxD4aXKJprS', 'http://kf01-03-forum.test/avatars/default_avatar.png', NULL, '2017-09-27 02:33:17', '2017-09-27 02:33:17'),
-(51, 'Chi Lin', 0, 'chi@saharadb.com', '$2y$10$oGWibfRW9EoCQ/A35VTgOuaKK.3nLSpnqDFuwhRP742H05MNe0Mx6', 'https://avatars1.githubusercontent.com/u/12766761?v=4', 'HUipOKnaiifsZQDEqcciiXiksb4GAZYDEsc9mzGYgE3oJxg3s0A2Vfdxw30I', '2017-09-28 04:47:41', '2017-10-04 05:30:09');
+(51, 'Chi Lin', 0, 'chi@example.com', '$2y$10$oGWibfRW9EoCQ/A35VTgOuaKK.3nLSpnqDFuwhRP742H05MNe0Mx6', 'https://avatars1.githubusercontent.com/u/12766761?v=4', 'HUipOKnaiifsZQDEqcciiXiksb4GAZYDEsc9mzGYgE3oJxg3s0A2Vfdxw30I', '2017-09-28 04:47:41', '2017-10-04 05:30:09');
 
 -- --------------------------------------------------------
 
