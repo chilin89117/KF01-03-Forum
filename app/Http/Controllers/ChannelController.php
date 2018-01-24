@@ -1,6 +1,5 @@
 <?php
 namespace App\Http\Controllers;
-
 use App\Channel;
 use Illuminate\Http\Request;
 
@@ -20,9 +19,7 @@ class ChannelController extends Controller
     $this->validate($request, [
       'title' => 'required|min:3|max:25|unique:channels'
     ]);
-
     Channel::create(['title' => $request->title]);
-
     return redirect()->route('channels.index')
                      ->with(['success'=>'Channel successfully created.']);
   }
@@ -35,10 +32,8 @@ class ChannelController extends Controller
     $this->validate($request, [
       'title' => 'required|min:3|max:50|unique:channels'
     ]);
-
     $channel->title = $request->title;
     $channel->save();
-
     return redirect()->route('channels.index')
                      ->with(['success'=>'Channel successfully updated.']);
   }
@@ -46,7 +41,6 @@ class ChannelController extends Controller
   public function destroy(Channel $channel)
   {
     $channel->delete();
-
     return redirect()->route('channels.index')
                      ->with(['success'=>'Channel successfully deleted.']);
   }

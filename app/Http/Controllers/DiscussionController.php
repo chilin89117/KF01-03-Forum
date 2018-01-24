@@ -89,10 +89,6 @@ class DiscussionController extends Controller
                      ->with(['success'=>'Discussion successfully updated.']);
   }
 
-  // public function destroy(Discussion $discussion)
-  // { }
-
-  // When a Reply is added to a Discussion
   public function addreply(Request $request, Discussion $discussion)
   {
     $this->validate($request, [

@@ -8376,6 +8376,11 @@ h4 > a {
   margin-top: 20px;
 }
 
+.panel {
+  -webkit-box-shadow: 5px 5px 5px #ccc;
+          box-shadow: 5px 5px 5px #ccc;
+}
+
 .panel-heading {
   font-weight: bolder;
 }

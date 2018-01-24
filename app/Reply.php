@@ -15,11 +15,4 @@ class Reply extends Model
 
   public function likes()
   { return $this->hasMany(Like::class); }
-
-  public function is_liked_by_user()
-  {
-    return $this->likes
-                ->where('user_id', auth()->id())
-                ->count();
-  }
 }
