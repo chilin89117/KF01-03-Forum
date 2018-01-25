@@ -18,9 +18,9 @@ return [
       'scope' => [],
     ],
     'github' => [
-      'client_id' => '',
-      'client_secret' => '',
-      'redirect_uri' => 'http://kf01-03-forum.test/github/redirect',
+      'client_id' => env('GITHUB_CLIENT_ID'),
+      'client_secret' => env('GITHUB_CLIENT_SECRET'),
+      'redirect_uri' => env('GITHUB_REDIRECT_URI'),
       'scope' => [],
     ],
   ],
